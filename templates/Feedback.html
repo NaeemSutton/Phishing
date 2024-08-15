@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .alert-container {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .alert-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d9534f; /* Red for the alert */
+            margin-bottom: 15px;
+        }
+        .alert-body {
+            font-size: 16px;
+            color: #333; /* Darker text for readability */
+            margin-bottom: 15px;
+        }
+        .btn-primary {
+            background-color: #007bff; /* UMass Memorial Blue */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker Blue */
+            border-color: #004085;
+        }
+        .phishing-notice {
+            font-size: 14px;
+            color: #d9534f; /* Red */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="alert-container">
+    <div class="alert-header">
+        Security Alert!
+    </div>
+    <div class="alert-body">
+        It looks like you used a Gmail account. Be extra cautious with emails from free email providers like Gmail, Yahoo, or Hotmail. Phishers often use these to impersonate legitimate organizations.
+        <br><br>
+        You will need to complete phishing training to ensure you can recognize and avoid such scams in the future.
+    </div>
+    <a href="https://www.youtube.com/watch?v=GZc-CpV5Z1k" class="btn btn-primary">Watch Training Video</a>
+</div>
+
+<p class="phishing-notice">This was a phishing simulation organized by the Security Department.</p>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
