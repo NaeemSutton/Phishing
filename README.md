@@ -1,6 +1,6 @@
 # Phishing Simulation Project
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=lQbfF3DHbQY)
+[Watch the video walkthrough on YouTube](https://www.youtube.com/watch?v=lQbfF3DHbQY)
 
 
 ## Overview
