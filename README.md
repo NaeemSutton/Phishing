@@ -1,5 +1,8 @@
 # Phishing Simulation Project
 
+[Watch the video on YouTube](https://www.youtube.com/watch?v=lQbfF3DHbQY)
+
+
 ## Overview
 This project is a phishing simulation tool designed to help organizations educate their employees on how to recognize phishing emails and avoid falling victim to scams. The simulation mimics a real-world phishing attack and provides feedback to users who fall for the phishing attempt.
 
