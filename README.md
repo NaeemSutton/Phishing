@@ -90,8 +90,5 @@ This project is a phishing simulation tool designed to help organizations educat
     ```
 5. Create a new Pull Request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Disclaimer
 This tool is intended for educational and training purposes only. Use it responsibly and within the bounds of your organization's policies and legal guidelines.
