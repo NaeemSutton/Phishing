@@ -1,94 +1,100 @@
 # Phishing Simulation Project
 
-[Watch the video walkthrough on YouTube](https://www.youtube.com/watch?v=lQbfF3DHbQY)
-
+[🎥 Watch the video walkthrough on YouTube](https://www.youtube.com/watch?v=lQbfF3DHbQY)
 
 ## Overview
-This project is a phishing simulation tool designed to help organizations educate their employees on how to recognize phishing emails and avoid falling victim to scams. The simulation mimics a real-world phishing attack and provides feedback to users who fall for the phishing attempt.
+This project is a phishing simulation tool designed to help organizations educate employees on recognizing phishing emails and preventing data compromise. The simulation mimics a real-world phishing scenario and provides immediate feedback to users who submit credentials.
+
+---
 
 ## Features
-- **Realistic Login Page**: A replica of the UMass Memorial myChart login page, used to simulate the phishing scenario.
-- **Feedback Mechanism**: Users who enter their credentials are redirected to a feedback page, alerting them to the phishing attempt.
-- **Email Alerts**: Admins receive notifications of each phishing attempt via email.
-- **Role-based Access Control**: Secure dashboard access for administrators to view the results of the simulation.
-- **Data Export**: Export submission data as a CSV file for further analysis.
-- **Training Integration**: A link to a phishing awareness training video is provided on the feedback page.
+- **🖥️ Realistic Login Page**: Clone of the UMass Memorial myChart portal to simulate phishing scenarios.
+- **⚠️ Email Alerts**: Sends admin notifications when users interact with phishing emails.
+- **🔐 Feedback Mechanism**: Users who submit credentials are redirected to a security warning page.
+- **📊 Dashboard**: Interactive dashboard to view submission patterns and domain types.
+- **📥 CSV Export**: Submissions can be downloaded for analysis.
+- **🔒 Role-based Access Control**: Admin-only access to simulation results.
+- **🎓 Training Integration**: Redirect users to phishing awareness training after detection.
+
+---
 
 ## Technologies Used
-- **Flask**: Python web framework used to create the web application.
-- **SQLAlchemy**: ORM for database management.
-- **Bootstrap**: CSS framework for responsive and modern UI design.
-- **SendGrid**: Third-party email service for sending alerts.
-- **SQLite**: Database used to store submission data.
-- **Jinja2**: Templating engine for rendering HTML pages.
+- **Flask** – Web server and routing
+- **SQLAlchemy** – ORM for database interaction
+- **SQLite** – Local data storage
+- **Jinja2** – HTML templating engine
+- **Bootstrap** – Responsive frontend UI
+- **SendGrid** – Email delivery and notifications
+
+---
+
+## Screenshots
+
+### 📧 Phishing Email Sample
+Fake email designed to resemble a legitimate UMass alert requesting credential verification.
+![Phishing Email](images/email_screenshot.png)
+
+### 🧑‍💻 Spoofed myChart Login Page
+Deceptively realistic login form used to simulate credential harvesting.
+![Login Page](images/login_screenshot.png)
+
+### 🧾 SQLite Database View
+Captured submission data stored in a local SQLite database.
+![Database](images/database_screenshot.png)
+
+### 🚨 Feedback Page (Security Alert)
+Notifies users that they fell for a phishing attempt and redirects them to training.
+![Alert Page](images/alert_screenshot.png)
+
+### 📊 Admin Dashboard
+Shows submission counts and domain types over time for admin analysis.
+![Dashboard](images/dashboard_screenshot.png)
+
+### 📄 CSV Submission Export
+Example of the exported `.csv` containing captured data.
+![CSV File](images/csv_screenshot.png)
+
+---
 
 ## Setup and Installation
 
 ### Prerequisites
 - Python 3.x
-- Virtual Environment (optional but recommended)
 - Flask
-- SendGrid API Key
+- SendGrid account and API key (for email alerts)
 
 ### Installation Steps
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/phishing-simulation.git
-    cd phishing-simulation
-    ```
 
-2. Create a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/phishing-simulation.git
+cd phishing-simulation
 
-3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+# (Optional) Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-4. Set up environment variables:
-    - Set your `SENDGRID_API_KEY` and any other necessary environment variables in a `.env` file or directly in your environment.
+# Install dependencies
+pip install -r requirements.txt
 
-5. Run the application:
-    ```bash
-    flask run
-    ```
+# Set up environment variables (SendGrid key, etc.)
+touch .env
+# Add: SENDGRID_API_KEY=your_key_here
 
-6. Access the application:
-    - Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your web browser.
+# Run the app
+flask run
 
-## Configuration
-- **Database**: The application uses an SQLite database by default. You can configure a different database by modifying the `SQLALCHEMY_DATABASE_URI` in `app.py`.
-- **Email Alerts**: Configure your SendGrid API key in the environment variables to enable email alerts.
 
-## Usage
+---
 
-### Simulating a Phishing Attack
-1. Deploy the application to a secure server.
-2. Send phishing emails to your users with a link to the login page ([http://yourdomain.com/login](http://yourdomain.com/login)).
-3. Monitor the dashboard to track who falls for the phishing attempt.
-4. Provide feedback and training to users who fall victim to the simulation.
+### 📁 Notes:
+Make sure your screenshots are named and placed in a folder called `images/`:
+- `email_screenshot.png`
+- `login_screenshot.png`
+- `database_screenshot.png`
+- `alert_screenshot.png`
+- `dashboard_screenshot.png`
+- `csv_screenshot.png`
 
-### Accessing the Dashboard
-- Log in to the admin dashboard at [http://yourdomain.com/dashboard](http://yourdomain.com/dashboard) using the credentials set during the setup process.
+Let me know if you want me to generate the image files with the correct names for you!
 
-## Contributing
-1. Fork the repository.
-2. Create your feature branch:
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -am 'Add some feature'
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature/your-feature
-    ```
-5. Create a new Pull Request.
-
-## Disclaimer
-This tool is intended for educational and training purposes only. Use it responsibly and within the bounds of your organization's policies and legal guidelines.
