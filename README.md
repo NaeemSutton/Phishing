@@ -87,14 +87,5 @@ flask run
 
 ---
 
-### 📁 Notes:
-Make sure your screenshots are named and placed in a folder called `images/`:
-- `email_screenshot.png`
-- `login_screenshot.png`
-- `database_screenshot.png`
-- `alert_screenshot.png`
-- `dashboard_screenshot.png`
-- `csv_screenshot.png`
 
-Let me know if you want me to generate the image files with the correct names for you!
 
