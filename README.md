@@ -32,27 +32,27 @@ This project is a phishing simulation tool designed to help organizations educat
 
 ### 📧 Phishing Email Sample
 Fake email designed to resemble a legitimate UMass alert requesting credential verification.
-![Phishing Email](images/email.png)
+![Phishing Email](phishing/email.png)
 
 ### 🧑‍💻 Spoofed myChart Login Page
 Deceptively realistic login form used to simulate credential harvesting.
-![Login Page](images/login.png)
+![Login Page](phishing/login.png)
 
 ### 🧾 SQLite Database View
 Captured submission data stored in a local SQLite database.
-![Database](images/database.png)
+![Database](phishing/database.png)
 
 ### 🚨 Feedback Page (Security Alert)
 Notifies users that they fell for a phishing attempt and redirects them to training.
-![Alert Page](images/training alert.png)
+![Alert Page](phishing/trainingalert.png)
 
 ### 📊 Admin Dashboard
 Shows submission counts and domain types over time for admin analysis.
-![Dashboard](images/dashboard.png)
+![Dashboard](phishing/dashboard.png)
 
 ### 📄 CSV Submission Export
 Example of the exported `.csv` containing captured data.
-![CSV File](images/csv.png)
+![CSV File](phishing/csv.png)
 
 ---
 
